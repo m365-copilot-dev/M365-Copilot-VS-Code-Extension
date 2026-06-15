@@ -1,7 +1,7 @@
 {
   "name": "m365-copilot-vs-code-extension",
   "displayName": "M365-Copilot-VS-Code-Extension",
-  "description": "M365 Copilot-inspired developer productivity tools — PR descriptions, commit messages, code explanations, and regex building — all offline.",
+  "description": "M365 Copilot-inspired developer productivity tools: PR descriptions, commit messages, code explanations, and regex building (all offline).",
   "version": "0.1.0",
   "publisher": "m365copilot",
   "license": "MIT",

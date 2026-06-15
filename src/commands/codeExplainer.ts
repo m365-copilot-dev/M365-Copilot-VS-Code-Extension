@@ -256,22 +256,22 @@ function explainLine(line: string, _language: string): string | null {
 
   // If statements
   if (/^if\s*\(|^if\s/.test(line)) {
-    return 'Conditional branch — executes the following block if condition is true';
+    return 'Conditional branch: executes the following block if condition is true';
   }
 
   // Else
   if (/^}\s*else/.test(line) || /^else/.test(line)) {
-    return 'Alternative branch — executes if the previous condition was false';
+    return 'Alternative branch: executes if the previous condition was false';
   }
 
   // For loops
   if (/^for\s*\(|^for\s/.test(line)) {
-    return 'Loop — iterates over a sequence or range';
+    return 'Loop: iterates over a sequence or range';
   }
 
   // While loops
   if (/^while\s*\(/.test(line)) {
-    return 'Loop — repeats while the condition remains true';
+    return 'Loop: repeats while the condition remains true';
   }
 
   // Try/catch
@@ -385,13 +385,13 @@ function assessComplexity(code: string): string {
   score += Math.floor(lineCount / 10);
 
   if (score <= 3) {
-    return '🟢 Low — Simple, straightforward code';
+    return '🟢 Low: Simple, straightforward code';
   }
   if (score <= 8) {
-    return '🟡 Medium — Moderate complexity with some branching';
+    return '🟡 Medium: Moderate complexity with some branching';
   }
   if (score <= 15) {
-    return '🟠 High — Complex logic with multiple branches/loops';
+    return '🟠 High: Complex logic with multiple branches/loops';
   }
-  return '🔴 Very High — Consider breaking into smaller functions';
+  return '🔴 Very High: Consider breaking into smaller functions';
 }

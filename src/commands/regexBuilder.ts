@@ -359,7 +359,7 @@ function buildCustomPattern(description: string): string {
   lines.push('─── Try These Built-in Patterns ───');
   lines.push('');
   lines.push(
-    PATTERN_LIBRARY.map((p) => `  • ${p.name} — ${p.description}`)
+    PATTERN_LIBRARY.map((p) => `  • ${p.name}: ${p.description}`)
       .join('\n')
   );
 
