@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](./CHANGELOG.md)
 
-A set of local dev tools that run in your VS Code sidebar. Designed to sit alongside your M365 Copilot setup for a smoother workflow. Reads your git diffs, analyzes selected code, and builds regex patterns, all without hitting any external API.
+A set of local dev tools that run in your VS Code sidebar. Designed to sit alongside your M365 Copilot setup for a smoother workflow. Reads your git diffs, analyzes selected code, and builds regex patterns.
 
 ## Features
 
