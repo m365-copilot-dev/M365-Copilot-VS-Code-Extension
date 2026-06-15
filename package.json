@@ -1,0 +1,102 @@
+{
+  "name": "m365-copilot-vs-code-extension",
+  "displayName": "M365-Copilot-VS-Code-Extension",
+  "description": "M365 Copilot-inspired developer productivity tools — PR descriptions, commit messages, code explanations, and regex building — all offline.",
+  "version": "0.1.0",
+  "publisher": "m365copilot",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/M365-Copilot-VS-Code-Extension"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets"
+  ],
+  "keywords": [
+    "copilot",
+    "m365",
+    "productivity",
+    "git",
+    "regex"
+  ],
+  "activationEvents": [
+    "onView:m365CopilotVsCodeExtension.sidebar"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "m365CopilotVsCodeExtension",
+          "title": "M365-Copilot-VS-Code-Extension",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "m365CopilotVsCodeExtension": [
+        {
+          "type": "webview",
+          "id": "m365CopilotVsCodeExtension.sidebar",
+          "name": "M365-Copilot-VS-Code-Extension"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "m365CopilotVsCodeExtension.prDescription",
+        "title": "M365-Copilot-VS-Code-Extension: Generate PR Description"
+      },
+      {
+        "command": "m365CopilotVsCodeExtension.commitMessage",
+        "title": "M365-Copilot-VS-Code-Extension: Generate Commit Message"
+      },
+      {
+        "command": "m365CopilotVsCodeExtension.explainCode",
+        "title": "M365-Copilot-VS-Code-Extension: Explain Selected Code"
+      },
+      {
+        "command": "m365CopilotVsCodeExtension.regexBuilder",
+        "title": "M365-Copilot-VS-Code-Extension: Regex Builder"
+      },
+      {
+        "command": "m365CopilotVsCodeExtension.focusSidebar",
+        "title": "M365-Copilot-VS-Code-Extension: Focus Sidebar"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "m365CopilotVsCodeExtension.explainCode",
+          "when": "editorHasSelection",
+          "group": "m365copilot@1"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "m365CopilotVsCodeExtension.focusSidebar",
+        "key": "ctrl+shift+m",
+        "mac": "cmd+shift+m"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.0"
+  }
+}
