@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](./CHANGELOG.md)
 
-A set of local dev tools that run in your VS Code sidebar. Reads your git diffs, analyzes selected code, and builds regex patterns, all without hitting any external API.
+A set of local dev tools that run in your VS Code sidebar. Designed to sit alongside your M365 Copilot setup for a smoother workflow. Reads your git diffs, analyzes selected code, and builds regex patterns, all without hitting any external API.
 
 ## Features
 
@@ -30,7 +30,7 @@ Type what you want to match (like "email" or "UUID") and get a pattern from the 
 
 ### From `.vsix` File
 
-1. Download the latest `.vsix` file from the [Releases](https://github.com/YOUR_USERNAME/M365-Copilot-VS-Code-Extension/releases) page.
+1. Download the latest `.vsix` file from the [Releases](https://github.com/m365-copilot-dev/M365-Copilot-VS-Code-Extension/releases) page.
 2. Open VS Code.
 3. Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`).
 4. Run **Extensions: Install from VSIX…**
@@ -40,7 +40,7 @@ Type what you want to match (like "email" or "UUID") and get a pattern from the 
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/M365-Copilot-VS-Code-Extension.git
+git clone https://github.com/m365-copilot-dev/M365-Copilot-VS-Code-Extension.git
 cd M365-Copilot-VS-Code-Extension
 
 # Install dependencies

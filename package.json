@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/M365-Copilot-VS-Code-Extension"
+    "url": "https://github.com/m365-copilot-dev/M365-Copilot-VS-Code-Extension"
   },
   "engines": {
     "vscode": "^1.85.0"
